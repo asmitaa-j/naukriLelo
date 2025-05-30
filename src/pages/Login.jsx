@@ -16,8 +16,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios
-        .post("http://192.168.29.249:8080/api/auth/login", form)
+      const res = await axios.post("http://192.168.29.249:8080/api/auth/login", form)
         .then((ress) => {
           console.log(ress.data.user);
           localStorage.setItem("user", JSON.stringify(ress.data.user));

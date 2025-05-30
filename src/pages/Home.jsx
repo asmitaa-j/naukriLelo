@@ -19,7 +19,7 @@ function Home(){
       justifyContent:'center',
       minHeight:'100vh',
       backgroundColor: '#f2f2f2', 
-     width:"100%"
+    //  width:"100%"
     }}>  
 <Typography variant='h2' sx={{ textShadow: '4px 4px 4px rgba(42, 73, 146, 0.23)', textAlign: { xs:'center'} , width: { xs: "100%"}, mt:{xs: 3}, mb:{xs: 0, md: 0}, px:5 }}> 
    Hello, <span>{user.name} </span> </Typography> 
@@ -32,7 +32,7 @@ function Home(){
 <Typography variant='h6'> What brings you here today? </Typography>
 <Box sx={{
     display: 'flex',  mt: 2 , mb:4 }}> 
-    <Box  sx={{m:2, bgcolor:'black', p:2, borderRadius: '8px', width:{xs:'50%'}, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+    <Box  sx={{m:2, bgcolor:'black', p:2, borderRadius: '8px', width:{xs:'50%', }, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
   <Link to="/jobsgallery" style={{ textDecoration:'none', color:' white', fontFamily:'sans-serif' , textAlign:'center'}}> Looking for a Job?</Link>
     </Box> 
 
